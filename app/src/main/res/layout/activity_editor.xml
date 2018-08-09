@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="@dimen/padding"
     tools:context=".EditorActivity">
 
     <!-- Overview category -->
@@ -17,7 +16,7 @@
 
         <!-- Label -->
         <TextView
-            android:text="Product info"
+            android:text="@string/category_product"
             style="@style/CategoryStyle"
             />
 
@@ -26,29 +25,63 @@
             android:layout_height="wrap_content"
             android:layout_width="0dp"
             android:layout_weight="2"
-            android:paddingLeft="4dp"
+            android:paddingLeft="@dimen/padding_left"
             android:orientation="vertical">
 
             <!-- Product Name field -->
             <EditText
-                android:id="@+id/edit_pet_name"
-                android:hint="Name"
+                android:id="@+id/edit_product_name"
+                android:hint="@string/hint_product_name"
                 android:inputType="textCapWords"
                 style="@style/EditorFieldStyle" />
 
             <!-- Price field -->
-            <EditText
-                android:id="@+id/edit_pet_breed"
-                android:hint="Price"
-                android:inputType="number"
-                style="@style/EditorFieldStyle" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/padding_left">
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    android:hint="@string/hint_price"
+                    android:inputType="number"
+                    style="@style/EditorFieldStyle" />
+
+                <TextView
+                    android:id="@+id/label_currency"
+                    android:text="@string/currency_sign"
+                    style="@style/EditorUnitsStyle"/>
+
+            </RelativeLayout>
 
             <!-- Quantity field -->
-            <EditText
-                android:id="@+id/edit_pet_breed"
-                android:hint="Quantity"
-                android:inputType="number"
-                style="@style/EditorFieldStyle" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:id="@+id/edit_quantity"
+                    android:hint="@string/hint_quantity"
+                    android:inputType="number"
+                    style="@style/EditorFieldStyle"
+                    android:layout_weight="3"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
         </LinearLayout>
     </LinearLayout>
 
@@ -56,11 +89,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="@dimen/padding">
 
         <!-- Label -->
         <TextView
-            android:text="Supplier info"
+            android:text="@string/category_supplier"
             style="@style/CategoryStyle"
             />
 
@@ -69,22 +102,26 @@
             android:layout_height="wrap_content"
             android:layout_width="0dp"
             android:layout_weight="2"
-            android:paddingLeft="4dp"
+            android:paddingLeft="@dimen/padding_left"
             android:orientation="vertical">
 
             <!-- Supplier Name field -->
             <EditText
-                android:id="@+id/edit_pet_name"
-                android:hint="Name"
+                android:id="@+id/edit_supplier_name"
+                android:hint="@string/hint_supplier_name"
                 android:inputType="textCapWords"
                 style="@style/EditorFieldStyle" />
 
             <!-- Supplier Phone field -->
             <EditText
-                android:id="@+id/edit_pet_name"
-                android:hint="Phone"
-                android:inputType="textCapWords"
+                android:id="@+id/edit_supplier_phone"
+                android:hint="@string/hint_supplier_phone"
+                android:inputType="phone"
                 style="@style/EditorFieldStyle" />
         </LinearLayout>
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER"/>
 </LinearLayout>
