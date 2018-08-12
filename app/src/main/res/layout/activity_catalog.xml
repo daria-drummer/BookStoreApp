@@ -19,7 +19,8 @@
         android:layout_centerInParent="true">
 
         <ImageView
-            android:id="@+id/empty_shelter_image"
+            android:src="@drawable/empty_bookshelf"
+            android:id="@+id/empty_bookshelf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true" />
@@ -28,13 +29,12 @@
             android:id="@+id/empty_title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/empty_shelter_image"
+            android:layout_below="@+id/empty_bookshelf"
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif-medium"
-            android:paddingTop="16dp"
-            android:text="Let's add books!!"
+            android:paddingTop="@dimen/padding"
+            android:text="@string/empty_view_text"
             android:textAppearance="?android:textAppearanceMedium"/>
-
     </RelativeLayout>
 
     <android.support.design.widget.FloatingActionButton

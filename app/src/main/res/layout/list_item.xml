@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -17,7 +16,6 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Barbara Oakley Learning how to learn"
             android:textSize="16sp"
             android:textStyle="bold"/>
 
@@ -30,20 +28,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Price:"
+                android:text="@string/price_tv"
                 android:textStyle="bold"
                 android:layout_marginRight="@dimen/padding"/>
 
             <TextView
                 android:id="@+id/price"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="100" />
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" $" />
+                android:text="@string/currency" />
 
         </LinearLayout>
 
@@ -55,18 +52,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Qnty: "
+                android:text="@string/qnty_tv"
                 android:textStyle="bold"
                 android:layout_marginRight="@dimen/padding"/>
 
             <TextView
                 android:id="@+id/quantity"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="100" />
-
+                android:layout_height="wrap_content" />
         </LinearLayout>
-
     </LinearLayout>
 
     <Button
@@ -74,6 +68,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="SALE"/>
-
+        android:text="SALE"
+        android:focusable="false" />
 </LinearLayout>

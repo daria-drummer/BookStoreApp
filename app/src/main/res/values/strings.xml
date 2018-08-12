@@ -13,7 +13,7 @@
     <string name="toast_product_saved">Product saved with row id:</string>
     <string name="action_delete_all_entries">Delete All Products</string>
     <string name="editor_activity_title_new_product">Add a new product</string>
-    <string name="editor_activity_title_edit_pet">Edit a product</string>
+    <string name="editor_activity_title_edit_product">Product Details</string>
     <string name="editor_insert_book_failed">Error with saving product</string>
     <string name="editor_insert_book_successful">Product saved</string>
     <string name="editor_update_book_failed">Error with updating product</string>
@@ -22,9 +22,17 @@
     <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
     <string name="discard">Discard</string>
     <string name="keep_editing">Keep Editing</string>
-    <string name="delete_dialog_msg">Delete this pet?</string>
+    <string name="delete_dialog_msg">Delete this product?</string>
     <string name="delete">Delete</string>
     <string name="cancel">Cancel</string>
     <string name="editor_delete_product_successful">Product deleted</string>
     <string name="editor_delete_product_failed">Error with deleting product</string>
+    <string name="quantity_decrement_error">Quantity is 0</string>
+    <string name="empty_view_text">Let\'s add books!</string>
+    <string name="price_tv">Price:</string>
+    <string name="currency">$</string>
+    <string name="qnty_tv">Qnty:</string>
+    <string name="product_field_empty">Please fill in the Product name</string>
+    <string name="supplier_name_field_empty">Please fill in the Supplier name</string>
+    <string name="supplier_phone_field_empty">Please fill in the Supplier phone</string>
 </resources>
